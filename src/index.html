@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FE 126</title>
+  <title>word</title>
+  
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./scss/main.scss">
+  <link rel="stylesheet" href="./scss/reset.scss"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
 </head>
 <body>
+  <div class="wrapper">
+    <h1 class="title">Dictionary</h1>
+    <div class="search">
+      <input class="input" type="text" placeholder="Search" required>
+      <i id="search" class="fas fa-search"></i>
+      <span id="remove" class="material-icons">close</span>
+    </div>
+    <p id="info-text">write any word to get the meaning</p>
+    <ul class="list">
+      <li class="word">
+        <div class="details">
+          <h3 id="word"></h3>
+          <p id="phonetics"></p>
+        </div> 
+        <i id="audio" class="fas fa-volume-up" ></i>
+      </li>
+      <li class="word">
+        <span id="definition"></span>
+      </li>
+    </ul>
+  </div>
+
   <script type="module" src="./js/app.js"></script>
 </body>
 </html>

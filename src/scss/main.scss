@@ -1,1 +1,81 @@
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: rgb(184, 240, 221);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+
+}
+
+.wrapper { 
+    margin-top: 40px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.search {
+    position: relative;
+
+}
+.title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 0 42px;
+    height: 40px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid rgb(132, 241, 205);
+    font-size: 18px;
+}
+
+#remove {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    left: 15px;
+    pointer-events: none;
+}
+
+.input:valid ~ #remove{
+    display: block;
+}
+
+#info-text{
+    margin-top: 10px;
+}
+
+.word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.list {
+   display: none;
+}
+
+.active {
+    display: block;
+}
 
